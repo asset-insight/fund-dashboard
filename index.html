@@ -217,6 +217,9 @@
     /* v70: 主要基金贡献同时展示存量规模与半年增量 */
     .drawer-fund,.drawer-fund-group-title{grid-template-columns:minmax(0,1fr) 82px 94px;column-gap:10px}.drawer-fund-main{min-width:0}.drawer-fund-main>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.drawer-fund-current,.drawer-fund-value{display:flex;align-items:center;justify-content:flex-end;align-self:stretch;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.drawer-fund-current{color:var(--ink);font-size:13px;font-weight:600}.drawer-fund-group-title{display:grid;align-items:center;padding-left:12px;padding-right:0}.drawer-fund-group-title>span:first-child{min-width:0}.drawer-fund-col{color:var(--muted);font-size:10px;font-weight:700;text-align:right;white-space:nowrap}
     @media(max-width:620px){.drawer-fund,.drawer-fund-group-title{grid-template-columns:minmax(0,1fr) 56px 66px;column-gap:6px}.drawer-fund-main{min-width:0}.drawer-fund-current,.drawer-fund-value{font-size:12px}.drawer-fund-col{font-size:9px}.drawer-fund-group .drawer-fund,.drawer-fund-group-title{padding-left:8px;padding-right:6px}}
+    /* v71: 微信桌面内置浏览器的筛选标签禁止折行 */
+    .pill{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important}
+    #manager-quick .pill,#fund-quick .pill,#manager-metrics .pill{display:inline-flex;align-items:center;justify-content:center;line-height:1}
   </style>
 </head>
 <body>
